@@ -5,45 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="test/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Liam Bowie</title>
 </head>
 <body>
+    <!-- Fixed navigation and Logo -->
     <header>
         <p class="logo">Liam Bowie </p>
         <nav>
             <ul>
-                <li>About</li>
-                <li>Skills</li>
-                <li>Projects</li>
-                <li>contact</li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="./contact.html">contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="landing">
+        <!-- Hero -->
+        <section class="hero">
             <h1>Liam Bowie</h1>
-            <h2>Front End Web Developer</h2>
+            <p class="typewriter">Front End Web Developer</p>
         </section>
 
-        <section class="about">
-            <p></p>
+        <!-- About section -->
+        <section id="about" class="about">
+            <p>After graduating from <span>Robert Gordons University</span> with a <em>first class honours</em> degree in Computer Science, I decided to explore other passions and interests while I was still young. I recently graduated from <span>University of Aberdeen</span> with a <em>first class honours</em> degree in Music Education. My experiences have prepared me for <strong>lifelong learning</strong> and I get most excited about learning about web technologies.</p>
+            <p>As a web developer, I love bringing designs to life. I am early in my career but I'm excited to use React.js to build beautiful web apps. If you're looking for a junior developer or if you need someone to build a website for you <a href="./contact.html">get in touch with me here</a>.</p>
+            <p><strong>When I'm not sitting in front of a computer </strong> I am likely found playing in the band pit for theatre shows, playing <a href="https://en.wikipedia.org/wiki/Tabletop_role-playing_game">TTRPG games</a>, or listening to fantasy audiobooks</p>
+            <a href="">View my resume</a>
         </section>
 
-        <section class="skills">
+        <!-- Skills -->
+        <section id="skills" class="skills">
             <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JS</li>
-                <li>Git</li>
+                <li><img src="/images/html5.svg" alt="HTML5 logo">HTML5</li>
+                <li><img src="./images/css3.svg" alt="CSS3 logo">CSS3</li>
+                <li><img src="./images/javascript.svg" alt="Javascript logo">JS</li>
+                <li><img src="./images/git-bash.svg" alt="Git Bash logo">Git</li>
             </ul>
         </section>
 
-        <section class="projects">
+        <!-- Projects -->
+        <section id="projects" class="projects">
             <article>
                 <img src="" alt="">
                 <h3>-Project Title-</h3>
                 <p>-Project description-</p>
+                <img src="./images/github.svg" alt="Github logo">
             </article>
         </section>
     </main>
