@@ -20,20 +20,19 @@
 
 /* Import Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=La+Belle+Aurore&family=Source+Code+Pro:ital,wght@1,300&display=swap');
 
 /* General Style */
 
 /* Colors  */
 
-html { 
-    background-color: #36454F;
-    color: #EAECED;
-}
-
 body { 
     font-size: 16px;
     margin: 0 auto;
+    color: whitesmoke;
+    background: rgb(18,24,27);
+    background: linear-gradient(45deg,rgb(18,24,27) 50%,rgb(32,39,55) 100%);
+    background-attachment: fixed;
 }
 
 header { 
@@ -57,12 +56,12 @@ h1,
 h2,
 h3,
 h4 { 
-    font-family: "open sans", sans-serif;
+    font-family: 'Cabin', Tahoma, Verdana, sans-serif;
 }
 
 p, li { 
     font-size: inherit;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Verdana, sans-serif;
     line-height: 1.2;
 }
 
@@ -72,7 +71,7 @@ p::before,
 p::after,
 section::before, 
 section::after { 
-    color: #101417;
+    color: whitesmoke;
 }
 
 ul li { 
@@ -137,8 +136,9 @@ h1::after {
 }
 
 .typewriter { 
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Courier New', 'Source Code Pro', monospace;
     font-size: 4rem;
+    font-style: italic;
     margin-top: 1rem;
     padding-left: 2rem;
 }
