@@ -169,13 +169,18 @@ h1 {
     padding: 10px;
     text-align: center;
     font-weight: bold;
+    transition: 0.5s;
 }
 
+.skills li:hover { 
+    transform: scale(1.2);
+}
 .skills-icon { 
     width: 6rem;
     height: auto;
     padding: 20px 30px;
 }
+
 
 .projects-container { 
     position: relative;
@@ -201,6 +206,7 @@ h1 {
 }
 
 .project-card:hover { 
+    transform: scale(1.075);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
@@ -323,7 +329,6 @@ h1::after {
     h1 { 
         font-size: 5rem;
     }
-
 
     .typewriter { 
         font-size: 2rem;
