@@ -35,6 +35,11 @@
     --black: #0E0C01;
 }
 
+*::selection { 
+    background: var(--primary-color-1);
+    color: var(--white);
+}
+
 body { 
     font-size: 16px;
     margin: 0 auto;
