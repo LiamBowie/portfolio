@@ -32,13 +32,13 @@
     --accent-color-1: #88B39C;
     --accent-color-2: #456956;
     --white: #f5f5f5;
-    --black: #080808;
+    --black: #0E0C01;
 }
 
 body { 
     font-size: 16px;
     margin: 0 auto;
-    color: var(--primary-color-1);
+    color: var(--black);
     background: var(--white);
     background-attachment: fixed;
 }
@@ -53,7 +53,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-color-1);
+    background-color: var(--black);
 }
 
 h1,
@@ -67,7 +67,7 @@ h4 {
 p, li { 
     font-size: inherit;
     font-family: Verdana, sans-serif;
-    line-height: 1.2;
+    line-height: 1.4;
     color: var(--black)
 }
 
@@ -77,7 +77,7 @@ ul li {
 
 a { 
     text-decoration: none;
-    color: var(--primary-color-2);
+    color: var(--primary-color-1);
 }
 
 strong { 
@@ -108,7 +108,7 @@ section::before, section::after {
     position: absolute;
     left: 2rem;
     z-index: -1;
-    color: var(--accent-color-1);
+    color: var(--primary-color-1);
 }
 
 
@@ -186,6 +186,7 @@ h1::after {
 .about { 
     padding: 30px 20%;
     overflow: hidden;
+    background-color: var(--black);
 }
 
 .about::before {
@@ -201,6 +202,7 @@ h1::after {
     font-size: 1.1rem;
     margin: 0 auto;
     text-align: center;
+    color: #f5f5f5;
 }
 
 .skills::before {
