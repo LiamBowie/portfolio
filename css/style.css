@@ -138,6 +138,29 @@ h1 {
     padding-left: 2rem;
 }
 
+.typing { 
+    border-right: 4px solid var(--primary-color);
+    animation: carat 1s infinite normal;
+}
+
+@keyframes carat { 
+    0% { 
+        border-right-color: var(--primary-color);
+    }
+    35% {
+        border-right-color: var(--primary-color);
+    }
+    50% { 
+        border-right-color: transparent;
+    }
+    85% { 
+        border-right-color: transparent;
+    }
+    100% { 
+        border-right-color: var(--primary-color);
+    }
+}
+
 .about { 
     position: relative;
     padding: 30px 20%;
