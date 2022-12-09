@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Fixed navigation and Logo -->
-    <header>
+    <header class="nav-banner">
         <p class="logo">Liam Bowie </p>
         <nav class="nav-top">
             <ul>
@@ -25,37 +25,61 @@
         <!-- Hero -->
         <section class="hero">
             <div>
-                <h1>Liam Bowie</h1>
-                <p class="typewriter">Front End Web Developer</p>
+                <h1>Hi, I'm Liam</h1>
+                <p class="typewriter">I am a <span>Front End Web Developer</span></p>
             </div>
         </section>
 
         <!-- About section -->
-        <section id="about" class="about">
-            <p>After graduating from <span>Robert Gordons University</span> with a <em>first class honours</em> degree in Computer Science, I decided to explore other passions and interests while I was still young. I recently graduated from <span>University of Aberdeen</span> with a <em>first class honours</em> degree in Music Education. My experiences have prepared me for <strong>lifelong learning</strong> and I get most excited about learning about web technologies.</p>
+        <section id="about" class="about content-center">
+            <p>After graduating from <strong>Robert Gordons University</strong> with a <em>first class honours</em> degree in Computer Science, I decided to explore other passions and interests while I was still young. I recently graduated from <strong>University of Aberdeen</strong> with a <em>first class honours</em> degree in Music Education. My experiences have prepared me for <strong>lifelong learning</strong> and I get most excited about learning about web technologies.</p>
             <p>As a web developer, I love bringing designs to life. I am early in my career but I'm excited to use React.js to build beautiful web apps. If you're looking for a junior developer or if you need someone to build a website for you <a href="./contact.html">get in touch with me here</a>.</p>
             <p><strong>When I'm not sitting in front of a computer </strong> I am likely found playing in the band pit for theatre shows, playing <a href="https://en.wikipedia.org/wiki/Tabletop_role-playing_game">TTRPG games</a>, or listening to fantasy audiobooks</p>
-            <a href="">View my resume</a>
+            <p><a href="">View my resume</a></p>
         </section>
 
         <!-- Skills -->
         <section id="skills" class="skills">
             <ul>
-                <li><img src="/images/html5.svg" alt="HTML5 logo">HTML5</li>
-                <li><img src="./images/css3.svg" alt="CSS3 logo">CSS3</li>
-                <li><img src="./images/javascript.svg" alt="Javascript logo">JS</li>
-                <li><img src="./images/git-bash.svg" alt="Git Bash logo">Git</li>
+                <li><img class="skills-icon" src="/images/html5.svg" alt="HTML5 logo"><br>HTML5</li>
+                <li><img class="skills-icon" src="./images/css3.svg" alt="CSS3 logo"><br>CSS3</li>
+                <li><img class="skills-icon" src="./images/javascript.svg" alt="Javascript logo"><br>JS</li>
+                <li><img class="skills-icon" src="./images/git-bash.svg" alt="Git Bash logo"><br>Git</li>
             </ul>
         </section>
 
         <!-- Projects -->
-        <section id="projects" class="projects">
-            <article>
-                <img src="#" alt="Project screenshot">
-                <h3>-Project Title-</h3>
-                <p>-Project description-</p>
-                <img src="./images/github.svg" alt="Github logo">
-            </article>
+        <section id="projects">
+            <div class="tags projects-container">
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80" alt="Project screenshot" class="project-screenshot">
+                    <div class="project-text-container">
+                    <h3>portfolio website</h3>
+                        <p>This website is my first large scale project I have undertaken with no guidance</p>
+                        <a href="https://github.com/LiamBowie"><img src="./images/github.svg" alt="Github-logo" class="projects-github-link"></a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80" alt="Project screenshot" class="project-screenshot">
+                    <div class="project-text-container">
+                    <h3>portfolio website</h3>
+                        <p>This website is my first large scale project I have undertaken with no guidance</p>
+                        <a href="https://github.com/LiamBowie"><img src="./images/github.svg" alt="Github-logo" class="projects-github-link"></a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80" alt="Project screenshot" class="project-screenshot">
+                    <div class="project-text-container">
+                    <h3>portfolio website</h3>
+                        <p>This website is my first large scale project I have undertaken with no guidance</p>
+                        <a href="https://github.com/LiamBowie"><img src="./images/github.svg" alt="Github-logo" class="projects-github-link"></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="contact">
+            <p><a href="">Hire me</a></p>
         </section>
     </main>
 </body>
