@@ -32,6 +32,10 @@
     --black: #0E0C01;
 }
 
+html { 
+    scroll-behavior: smooth;
+}
+
 *::selection { 
     background: var(--primary-color);
     color: var(--white);
@@ -48,7 +52,7 @@ body {
 header { 
     position: fixed;
     top: 0;
-    height: 70px;
+    height: 50px;
     width: 100%;
     box-sizing: border-box;
     padding: 0 50px;
@@ -105,6 +109,7 @@ img {
 
 .nav-banner { 
     z-index: 20;
+    transition: top 0.4s;
 }
 
 .logo { 
@@ -118,6 +123,7 @@ img {
 
 .nav-top li { 
     padding-right: 2rem;
+    font-weight: bold;
 }
 
 .hero { 
@@ -164,6 +170,7 @@ h1 {
 .about { 
     position: relative;
     padding: 30px 20%;
+    scroll-margin-top: var(--nav-height);
     overflow: hidden;
     background-color: var(--black);
 }
