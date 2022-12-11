@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/typewriter.js" defer></script>
-    <script src="js/navbar.js" defer></script>
+    <script defer src="js/typewriter.js"></script>
+    <script defer src="js/navbar.js"></script>
+    <script defer src="js/about.js"></script>
     <link rel="stylesheet" href="css/reset.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Liam Bowie - Front End Dev</title>
@@ -29,25 +30,26 @@
         <section class="hero">
             <div>
                 <h1>Hi, I'm Liam</h1>
-                <p class="typewriter">I am a <span id="typed-out" class="typing"></span></p>
+                <p class="typewriter">I am a <span id="subtitle" class="typing"></span></p>
             </div>
         </section>
 
         <!-- About section -->
         <section id="about" class="about">
-            <ul>
-                <li>First class honours degree in computer science </li>
-                <li>First class honours degree in music education</li>
-                <li>Lifelong learner with a passion for new technologies</li>
+            <ul id="about-list">
+                <li>First class honours degree in computer science</li>
                 <li>Developing skills as a front end web developer</li>
                 <li>Aspiring to be a full stack engineer </li>
-                <li>Love for problem solving and coding</li>
-                <li>Active professional musician as a bass/electric/acoustic guitarist</li>
-                <li>Amateur singer of musical theatre, classical, and popular music</li>
-                <li>Amateur pianist</li>
-                <li>Player and game master of TTRPG games like Dungeons and Dragons </li>
-                <li>Reader of fantasy books </li>
+                <li>Lifelong learner with a passion for new technologies</li>
+                <li>Love for solving problems with code</li>
+                <li class="hidden">First class honours degree in music education</li>
+                <li class="hidden">Active professional musician as a bass/electric/acoustic guitarist</li>
+                <li class="hidden">Amateur singer of musical theatre, classical, and popular music</li>
+                <li class="hidden">Amateur pianist</li>
+                <li class="hidden">Player and game master of TTRPG games like Dungeons and Dragons </li>
+                <li class="hidden">Reader of fantasy books</li>
             </ul>
+            <button id="btn-more" class="more">Want to know more?</button>
         </section>
 
         <!-- Skills -->

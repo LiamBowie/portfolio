@@ -70,7 +70,7 @@ h4 {
     font-weight: bold;
 }
 
-p, li { 
+p, li, button { 
     font-size: inherit;
     font-family: Verdana, sans-serif;
     line-height: 1.4;
@@ -97,8 +97,12 @@ img {
 
 /* Utilities */
 
-.content-center{ 
-    margin: 0 auto;
+.hidden { 
+    display: none;
+}
+
+.show { 
+    display: auto;
 }
 
 /* Sitewide */
@@ -175,8 +179,7 @@ h1 {
 .about ul li { 
     max-width: 75ch;
     font-size: 1.1rem;
-    margin: 0 auto;
-    text-align: left;
+    padding-bottom: 0.6rem;
     color: var(--white);
 }
 
@@ -184,6 +187,17 @@ h1 {
     content: "> ";
     position: relative;
     left: auto;
+}
+
+.about .more { 
+    background-color: var(--primary-color);
+    color: var(--black);
+    width: fit-content;
+    height: fit-content;
+    font-weight: bold;
+    padding: .5rem;
+    border-radius: 10px;
+    margin: 0;
 }
 
 .skills { 
@@ -297,12 +311,13 @@ h1::after {
     content: "</p>";
 }
 
-.about > ul::before {
+.about::before {
     content: "<about>";
 }
 
-.about > ul::after { 
+.about::after { 
     content: "</about>";
+    top: 91%;
 }
 
 .skills > ul::before {
@@ -336,6 +351,11 @@ h1::after {
 
     .typewriter::before, .typewriter::after { 
         left: auto;
+    }
+
+    .about { 
+        width: fit-content;
+        padding: 30px 12.5%;
     }
 }
 
@@ -371,6 +391,6 @@ h1::after {
     }
 
     .about { 
-        padding: 12%;
+        padding: 30px 12%;
     }
 }
