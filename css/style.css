@@ -335,6 +335,11 @@ img {
     padding: 30px 20%;
 }
 
+.contact > *::selection { 
+    background-color: var(--black);
+    color: var(--white);
+}
+
 .contact > h2 { 
     margin-top: 30px;
 }
