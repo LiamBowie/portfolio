@@ -205,17 +205,22 @@ h1 {
     margin-bottom: 50px;
 }
 
+.skills-grid { 
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
 .skills ul {
+    box-sizing: border-box;
     width: 100%;
-    padding: 50px 0 ;
-    display: inline-flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    padding-top: 50px;
 }
 
 .skills li {
-    display: block;
-    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
     text-align: center;
     font-weight: bold;
     font-family: 'Source Code Pro', monospace;
@@ -225,10 +230,11 @@ h1 {
 .skills li:hover { 
     transform: scale(1.2);
 }
+
 .skills-icon { 
-    width: 6rem;
+    margin: 0 auto;
+    width: 4rem;
     height: auto;
-    padding: 20px 30px;
 }
 
 
@@ -322,6 +328,7 @@ h1::after {
 
 .skills > ul::before {
     content: "<skills>";
+    margin-top: -2.5rem;
 }
 
 .skills > ul::after { 
@@ -391,6 +398,19 @@ h1::after {
     }
 
     .about { 
-        padding: 30px 12%;
+        padding: 60px 12% 60px;
+    }
+
+    .about::before { 
+        margin-top: -2rem;
+    }
+    .about::after { 
+        top: 95%;
+    }
+
+    .skills-grid { 
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
     }
 }
