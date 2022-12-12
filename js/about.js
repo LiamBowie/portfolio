@@ -1,5 +1,6 @@
 const btn = document.getElementById('btn-more');
 const list = document.getElementsByClassName('hidden')
+let hiddenElements = true;
 
 btn.addEventListener('click', () => { 
 
@@ -8,4 +9,6 @@ btn.addEventListener('click', () => {
     while(list.length){
         list[0].classList.remove('hidden'); 
     }
+
+    btn.style.display = 'none';
 });
